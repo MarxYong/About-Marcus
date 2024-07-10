@@ -4,16 +4,30 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout title="About Me">
 	<main>
+        <div class="breadcrumbs text-sm">
+            <ul>
+              <li><a href="../">Home</a></li>
+              <li>About Me</li>
+            </ul>
+        </div>
 		<h1>About <span class="text-gradient">Me</span></h1>
         <div class="card glass">
+            <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                  class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
             <div class="card-body">
                 <h2 class="card-title"></h2>
-                <p>Are you looking for a highly motivated and results-oriented software developer with a proven track record of building innovative solutions? 
+                <p>Seeking a motivated software developer with a proven track record of building innovative solutions? 
                     In my resume, you'll find a detailed breakdown of my skills and experience. 
                     I'm passionate about crafting clean, efficient code and collaborating with teams to bring projects to life. 
                     Download my resume today to learn more!</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Download <span>&rarr;</span></button>
+                    <button class="btn btn-primary">
+                        <a href="https://docs.google.com/document/d/1u6A3QVjJEV2dpwEF6htbQ9-HcgHGCIl6A4bTa_29VME//export?format=pdf">
+                            Download <span>&rarr;</span>
+                    </button>
                 </div>
             </div>
         </div>
